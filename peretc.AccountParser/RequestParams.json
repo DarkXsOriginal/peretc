@@ -1,0 +1,15 @@
+{
+  "options": {
+    "privacy_filter": "all",
+    "sort": "last_pinned_to",
+    "field_set_key": "profile_grid_item",
+    "filter_stories": false,
+    "username": "sashkopodletc",
+    "page_size": 25,
+    "group_by": "mix_public_private",
+    "include_archived": true,
+    "redux_normalize_feed": true,
+    "filter_all_pins": false
+  },
+  "context": {}
+}
