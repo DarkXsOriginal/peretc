@@ -40,21 +40,17 @@ namespace ImageboardBackuper
                 catch (HttpRequestException e)
                 {
                     Console.WriteLine($"Ошибка при загрузке файла: {e.Message}");
+                    throw e;
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine($"Произошла ошибка: {e.Message}");
+                    throw e;
                 }
             }
         }
 
-        public static async Task Main(string[] args)
-        {
-            string url = "https://i.pinimg.com/736x/92/52/26/92522636e62ff8685a72da760b871f51.jpg";
-            string filePath = @"C:\Users\Leon\Documents\PNG out";  // Замените на существующую папку
-
-            await DownloadFileAsync(url, filePath);
-        }
+        
     }
 }
 
