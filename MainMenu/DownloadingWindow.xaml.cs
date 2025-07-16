@@ -20,9 +20,31 @@ namespace Interface
     /// </summary>
     public partial class DownloadingWindow : Page
     {
+        
         public DownloadingWindow()
         {
             InitializeComponent();
+        }
+
+        private void ListBoards_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string[,] boards = new string[,]
+            {
+                {"1","2DTyn"},
+                {"2","2DTyn3"},
+                {"3","3DTyn"},
+            };
+            for (int i = 0; i < boards.GetLength(0); i++)
+            {
+                string[] board = new string[boards.GetLength(1)];
+                for (int j = 0; j < board.GetLength(0); j++)
+                {
+                    board[j] = boards[i, j];
+                }
+
+               ListBoards.Items.Add(board);
+            }
+            
         }
     }
 }
