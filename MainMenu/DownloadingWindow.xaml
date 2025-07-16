@@ -1,0 +1,24 @@
+﻿<Page x:Class="MainMenu.DownloadWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MainMenu"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBox x:Name="TxtBoxFinder" HorizontalAlignment="Left" Margin="504,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontFamily="Franklin Gothic Medium" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="458,53,0,0" TextWrapping="Wrap" Text="Поиск:" VerticalAlignment="Top" Height="18" Width="41" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="526,332,0,0" TextWrapping="Wrap" Text="Размер зазрузки" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="16"/>
+        <TextBox x:Name="TxtBoxUploader" HorizontalAlignment="Left" Margin="653,332,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110" FontSize="14" FontFamily="Franklin Gothic Medium"/>
+        <Button Content="Подтвердить" HorizontalAlignment="Left" Margin="595,401,0,0" VerticalAlignment="Top" Width="168" FontFamily="Franklin Gothic Medium" FontSize="14"/>
+        <ToolBar VerticalAlignment="Top">
+            <Button Content="File"/>
+        </ToolBar>
+        <DataGrid x:Name="ListBoards" AutoGenerateColumns="True" HorizontalGridLinesBrush="DarkGray" RowBackground="LightGray" AlternatingRowBackground="White" VerticalAlignment="Center">
+            <DataGrid.Items>
+            </DataGrid.Items>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Center" Height="2" Margin="0,216,0,0" VerticalAlignment="Top" Width="1" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+    </Grid>
+</Page>
