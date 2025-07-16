@@ -7,6 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <CheckBox x:Name="ChBoxSelectAll" Content="CheckBox" HorizontalAlignment="Left" Margin="106,53,0,0" VerticalAlignment="Top" Height="19" Width="91" FontFamily="Franklin Gothic Medium" FontSize="16"/>
+        <CheckBox x:Name="ChBoxChoosed" Content="CheckBox" HorizontalAlignment="Left" Margin="106,94,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="20" Checked="ChBoxChoosed_Checked"/>
+        <TextBox x:Name="TxtBoxFinder" HorizontalAlignment="Left" Margin="504,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontFamily="Franklin Gothic Medium" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="458,53,0,0" TextWrapping="Wrap" Text="Поиск:" VerticalAlignment="Top" Height="18" Width="41" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="526,332,0,0" TextWrapping="Wrap" Text="Размер зазрузки" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="16"/>
+        <TextBox x:Name="TxtBoxUploader" HorizontalAlignment="Left" Margin="653,332,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110" FontSize="14" FontFamily="Franklin Gothic Medium"/>
+        <Button Content="Подтвердить" HorizontalAlignment="Left" Margin="595,401,0,0" VerticalAlignment="Top" Width="168" FontFamily="Franklin Gothic Medium" FontSize="14"/>
+
     </Grid>
 </UserControl>

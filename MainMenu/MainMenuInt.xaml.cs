@@ -16,13 +16,19 @@ using System.Windows.Shapes;
 namespace MainMenu
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для MainMenuInt.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class MainMenuInt : Page
     {
-        public Page1()
+        public MainMenuInt()
         {
             InitializeComponent();
+        }
+
+        private void BtnDownloading_Click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("UserControl1.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
         }
     }
 }

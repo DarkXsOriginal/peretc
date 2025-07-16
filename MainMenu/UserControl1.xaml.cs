@@ -1,3 +1,4 @@
+using System.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,6 +20,11 @@ namespace MainMenu
         public UserControl1()
         {
             InitializeComponent();
+        }
+
+        private void ChBoxChoosed_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 

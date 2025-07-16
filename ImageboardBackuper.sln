@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "peretc.AccountParser", "per
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.AccountParser", "test.AccountParser\test.AccountParser.csproj", "{F318C2ED-7659-4A40-8E17-CC8E0BC98989}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenu", "MainMenu\MainMenu.csproj", "{5391B9C3-2048-467F-8681-BC3022471724}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "MainMenu\Interface.csproj", "{5391B9C3-2048-467F-8681-BC3022471724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +27,18 @@ Global
 		{95B47564-6EA2-4A81-8B73-D1D775FFBEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95B47564-6EA2-4A81-8B73-D1D775FFBEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95B47564-6EA2-4A81-8B73-D1D775FFBEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC46B653-38E0-41CB-A77E-08C074FC477E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC46B653-38E0-41CB-A77E-08C074FC477E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC46B653-38E0-41CB-A77E-08C074FC477E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC46B653-38E0-41CB-A77E-08C074FC477E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F318C2ED-7659-4A40-8E17-CC8E0BC98989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F318C2ED-7659-4A40-8E17-CC8E0BC98989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F318C2ED-7659-4A40-8E17-CC8E0BC98989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F318C2ED-7659-4A40-8E17-CC8E0BC98989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5391B9C3-2048-467F-8681-BC3022471724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5391B9C3-2048-467F-8681-BC3022471724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5391B9C3-2048-467F-8681-BC3022471724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5391B9C3-2048-467F-8681-BC3022471724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
