@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,23 +29,19 @@ namespace Interface
 
         private void ListBoards_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string[,] boards = new string[,]
-            {
-                {"1","2DTyn"},
-                {"2","2DTyn3"},
-                {"3","3DTyn"},
-            };
-            for (int i = 0; i < boards.GetLength(0); i++)
-            {
-                string[] board = new string[boards.GetLength(1)];
-                for (int j = 0; j < board.GetLength(0); j++)
-                {
-                    board[j] = boards[i, j];
-                }
+            GiveToTheList();
+        }
+            public void GiveToTheList()
+        {
+            ArrayList boards = new ArrayList();
+            boards.Add("1Dock");
+            boards.Add("2Dock");
+            boards.Add("3Dock");
+            ListBoards.Items.Add(boards);
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
-               ListBoards.Items.Add(board);
-            }
-            
         }
     }
 }

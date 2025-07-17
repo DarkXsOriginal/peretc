@@ -8,7 +8,6 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBox x:Name="TxtBoxFinder" HorizontalAlignment="Left" Margin="504,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontFamily="Franklin Gothic Medium" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="458,53,0,0" TextWrapping="Wrap" Text="Поиск:" VerticalAlignment="Top" Height="18" Width="41" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="526,332,0,0" TextWrapping="Wrap" Text="Размер зазрузки" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="16"/>
         <TextBox x:Name="TxtBoxUploader" HorizontalAlignment="Left" Margin="653,332,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <Button Content="Подтвердить" HorizontalAlignment="Left" Margin="595,401,0,0" VerticalAlignment="Top" Width="168" FontFamily="Franklin Gothic Medium" FontSize="14"/>
@@ -18,9 +17,10 @@
         <DataGrid HorizontalAlignment="Center" Height="2" Margin="0,216,0,0" VerticalAlignment="Top" Width="1" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <DataGrid x:Name="ListBoards" AutoGenerateColumns="True" HorizontalGridLinesBrush="DarkGray" RowBackground="LightGray" AlternatingRowBackground="White" VerticalAlignment="Top" SelectionChanged="ListBoards_SelectionChanged" Margin="0,90,0,0">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Выбрать" Binding="{Binding Title}" Width="90" />
+                <DataGridCheckBoxColumn Header="Выбрать" Binding="{Binding Title}" Width="90" />
                 <DataGridTextColumn Header="Список досок" Binding="{Binding Title}" Width="500" />
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Найти" HorizontalAlignment="Left" Margin="639,52,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="14"/>
     </Grid>
 </Page>
