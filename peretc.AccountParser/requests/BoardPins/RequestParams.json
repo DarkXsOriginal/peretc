@@ -1,0 +1,14 @@
+{
+  "options": {
+    "board_id": "1113304039075266805",
+    "board_url": "/sashkopodletc/%D0%BA%D1%83%D0%BB%D0%B5%D0%B1%D1%8F%D0%BA%D0%B0/",
+    "currentFilter": -1,
+    "field_set_key": "partner_react_grid_pin",
+    "filter_section_pins": true,
+    "sort": "default",
+    "layout": "default",
+    "page_size": 25,
+    "redux_normalize_feed": true
+  },
+  "context": {}
+}

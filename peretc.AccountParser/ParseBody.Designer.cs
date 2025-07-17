@@ -69,15 +69,5 @@ namespace peretc.AccountParser {
                 return ((byte[])(obj));
             }
         }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
-        /// </summary>
-        public static byte[] RequestParams_json {
-            get {
-                object obj = ResourceManager.GetObject("RequestParams_json", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

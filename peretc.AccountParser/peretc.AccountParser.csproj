@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="RequestHeaders.bulk.txt" />
-    <EmbeddedResource Include="RequestParams.json" />
+    <EmbeddedResource Include="requests\UserBoards\RequestHeaders.bulk.txt" />
+    <EmbeddedResource Include="requests\UserBoards\RequestParams.json" />
   </ItemGroup>
 
   <ItemGroup>
