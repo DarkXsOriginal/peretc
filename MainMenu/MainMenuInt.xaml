@@ -7,13 +7,12 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainMenuInt">
-        
+
 
     <Grid>
-        <Button x:Name="BtnBackup" Content="Резевная копия" HorizontalAlignment="Left" Margin="112,74,0,0" VerticalAlignment="Top" Height="42" Width="202" FontFamily="Franklin Gothic Medium" FontSize="14"/>
-        <Button x:Name="BtnDownloading" Content="Загрузить" HorizontalAlignment="Left" Margin="461,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.525,0.072" Height="41" Width="202" FontFamily="Franklin Gothic Medium" FontSize="14" Click="BtnDownloading_Click"/>
-        <Button x:Name="BtnRestore" Content="Восстановить" HorizontalAlignment="Left" Margin="112,0,0,0" VerticalAlignment="Center" Height="42" Width="202" FontFamily="Franklin Gothic Medium" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,21,0,0" TextWrapping="Wrap" Text="Главное меню" VerticalAlignment="Top" Height="26" Width="149" FontFamily="Franklin Gothic Medium" FontSize="20"/>
-
+        <TextBlock TextWrapping="Wrap" Text="Главное меню" Height="26" Width="148" FontFamily="Franklin Gothic Medium" FontSize="20" RenderTransformOrigin="-1.365,0.809" Margin="326,10,326,414"/>
+        <Button x:Name="BtnDownloading" Content="Загрузить" RenderTransformOrigin="-0.525,0.072" Height="41" Width="200" FontFamily="Franklin Gothic Medium" FontSize="14" Click="BtnDownloading_Click" Margin="540,111,60,298"/>
+        <Button x:Name="BtnRestore" Content="Восстановить"  Height="42" Width="202" FontFamily="Franklin Gothic Medium" FontSize="14" Margin="50,285,548,123"/>
+        <Button x:Name="BtnBackup" Content="Резевная копия" Height="42" Width="202" FontFamily="Franklin Gothic Medium" FontSize="14" Margin="50,115,548,293"/>
     </Grid>
 </Page>

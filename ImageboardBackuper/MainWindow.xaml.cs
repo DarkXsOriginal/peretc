@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using MainMenu;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,13 @@ namespace ImageboardBackuper
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new Window();
+            window.Content = new MainMenuInt();
+            window.Show();
         }
     }
 }
