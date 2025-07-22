@@ -27,7 +27,7 @@ namespace MainMenu
 
         private void BtnDownloading_Click(object sender, RoutedEventArgs e)
         {
-            Uri uri = new Uri("UserControl1.xaml", UriKind.Relative);
+            Uri uri = new Uri("DownloadingWindow.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);
         }
     }
