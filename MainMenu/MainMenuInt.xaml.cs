@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,8 +28,9 @@ namespace MainMenu
 
         private void BtnDownloading_Click(object sender, RoutedEventArgs e)
         {
-            Uri uri = new Uri("DownloadingWindow.xaml", UriKind.Relative);
-            this.NavigationService.Navigate(uri);
+            Window window = new Window();
+            window.Content = new DownloadingWindow();
+            window.Show();
         }
     }
 }
