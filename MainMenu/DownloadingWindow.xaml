@@ -22,5 +22,6 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Найти" HorizontalAlignment="Left" Margin="639,52,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="14"/>
+        <ListBox x:Name="lsb" d:ItemsSource="{Binding Listitems}"/>
     </Grid>
 </Page>

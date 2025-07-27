@@ -1,7 +1,10 @@
-﻿using System;
+﻿using peretc.AccountParser;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,23 +24,26 @@ namespace Interface
     /// </summary>
     public partial class DownloadingWindow : Page
     {
-        
         public DownloadingWindow()
         {
+
             InitializeComponent();
+            GiveToTheList();
         }
 
         private void ListBoards_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            GiveToTheList();
+
         }
-            public void GiveToTheList()
+        public void GiveToTheList()
         {
-            ArrayList boards = new ArrayList();
-            boards.Add("1Dock");
-            boards.Add("2Dock");
-            boards.Add("3Dock");
-            ListBoards.Items.Add(boards);
+            
+            BoardData[] boards=new PinterestAccountScraper("marcykatya").GetBoardList().Result;
+            foreach (BoardData board in boards)
+            {
+                string boadstr = $"{board.Name}";
+                lsb.Items.Add(board);
+            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
